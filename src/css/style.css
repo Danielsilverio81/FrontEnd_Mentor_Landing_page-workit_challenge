@@ -56,13 +56,9 @@ body {
   text-decoration: none;
 }
 
-a:nth-child(1) {
+.access a {
   border-bottom: 3px solid var(--decoration-color);
   padding-bottom: 6px;
-}
-
-span {
-  border-bottom: 3px solid var(--decoration-color);
 }
 
 #call {
@@ -91,6 +87,10 @@ span {
   color: var(--background-page);
   margin: 2px;
 }
+
+.call-for-page span {
+    border-bottom: 3px solid var(--decoration-color);
+  }
 
 .click-to-learn {
   margin-top: 1.1em;
@@ -145,4 +145,46 @@ path {
   position: absolute;
   left: 87.08em;
   top: 12.40em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 300px;
+}
+
+#container-services {
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  gap: 26px;
+  width: 100%;
+  max-width: 1114px;
+  height: 308px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px auto;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #584D62;
+  border-radius: 50%;
+}
+
+.circle a {
+  text-decoration: none;
+}
+
+
+
+.text-services {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 }
