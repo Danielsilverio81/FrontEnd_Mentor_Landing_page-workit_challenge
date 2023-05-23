@@ -12,7 +12,6 @@
 
 :root {
   --container-purple: #24053E;
-  --background-founder: #44FFA1;
   --background-invitation: #584D62;
   --background-container-invitation: #FCF8FF;
   --background-page: #ffff;
@@ -23,7 +22,20 @@
   display: none;
 }
 
+.btn {
+  color: var(--container-purple);
+  background-color: var(--decoration-color);
+  font-size: 1.11em;
+  height: 61px;
+}
+
+.underline {
+  border-bottom: 3px solid var(--decoration-color);
+  padding-bottom: 1px;
+}
+
 body {
+  background-color: var(--background-page);
   width: 100%;
   min-height: 100vh;
   font-family: Manrope, serif;
@@ -56,11 +68,6 @@ body {
   text-decoration: none;
 }
 
-.access a {
-  border-bottom: 3px solid var(--decoration-color);
-  padding-bottom: 6px;
-}
-
 #call {
   display: flex;
   flex-direction: column;
@@ -88,18 +95,10 @@ body {
   margin: 2px;
 }
 
-.call-for-page span {
-    border-bottom: 3px solid var(--decoration-color);
-  }
-
 .click-to-learn {
   margin-top: 1.1em;
-  height: 62px;
   width: 161px;
-  background-color: var(--decoration-color);
-  font-size: 1.11em;
   font-weight: 600;
-  color: var(--container-purple);
   border: none;
 }
 
@@ -114,13 +113,13 @@ body {
   height: 29px;
   width: 100%;
   background-color: var(--container-purple);
-  border-radius: 0 0 100% 100%;
+  border-radius: 0 0 140% 140%;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .cell-phone-img {
   position: absolute;
-  left: 461px;
+  left: 371px;
   top: 476px;
   width: 100%;
   max-width: 715px;
@@ -144,14 +143,8 @@ body {
   top: 12.40em;
 }
 
-#container-light-pink {
-  width: 1114px;
-  height: 308px;
-}
-
 main {
   background-color: #FCF8FF;
-  width: 100%;
   height: 720.73px;
   width: 100%;
   display: flex;
@@ -164,16 +157,18 @@ main {
 #container-services {
   text-align: center;
   display: flex;
+  gap: 0 1.62em;
   justify-content: center;
   width: 100%;
-  height: 308px;
+  max-width: 1114px;
+  max-height: 408px;
 }
 
 .circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3.62em auto;
+  margin: 2.9em auto;
   width: 56px;
   height: 56px;
   border: 1px solid #584D62;
@@ -191,7 +186,9 @@ main {
 }
 
 .text-services {
-  margin-top: 1.75em;
+  width: 100%;
+  max-width: 354px;
+  padding-top: 0.7em;
   font-weight: 400;
   font-size: 1.12em;
   line-height: 2em;
@@ -200,4 +197,37 @@ main {
 .light-pink-curve {
   background-color: #FCF8FF;
   box-shadow: none;
+}
+
+
+#invitation-to-test {
+  width: 100%;
+  max-width: 1112px;
+  max-height: 647.74px;
+  display: flex;
+}
+
+.img-founder {
+  width: 100%;
+  max-width: 477px;
+  max-height: 477px;
+}
+
+.img-founder img {
+  width: 100%;
+}
+
+.invitation {
+  color: var(--background-page);
+  background-color: var(--container-purple);
+  width: 100%;
+  max-width: 730px;
+  max-height: 413px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.access-test {
+  width: 190px;
 }
