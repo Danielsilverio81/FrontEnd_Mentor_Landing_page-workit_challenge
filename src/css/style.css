@@ -14,7 +14,7 @@
   --container-purple: #24053E;
   --background-invitation: #584D62;
   --background-container-invitation: #FCF8FF;
-  --background-page: #ffff;
+  --background-white: #ffff;
   --decoration-color: #44FFA1;
 }
 
@@ -27,15 +27,23 @@
   background-color: var(--decoration-color);
   font-size: 1.11em;
   height: 61px;
+  cursor: pointer;
 }
+.btn:hover {
+  color: var(--decoration-color);
+  background-color: transparent;
+  border: 1px solid var(--decoration-color);
+}
+
+.btn-apply {cursor: pointer;}
+.btn-apply:hover {color: var(--decoration-color);}
 
 .underline {
   border-bottom: 3px solid var(--decoration-color);
-  padding-bottom: 1px;
 }
 
 body {
-  background-color: var(--background-page);
+  background-color: #f2f2f2;
   width: 100%;
   min-height: 100vh;
   font-family: Manrope, serif;
@@ -64,7 +72,7 @@ body {
 }
 
 .access a { 
-  color: var(--background-page);
+  color: var(--background-white);
   text-decoration: none;
 }
 
@@ -91,7 +99,7 @@ body {
   font-weight: 600;
   text-align: center;
   line-height: 86px;
-  color: var(--background-page);
+  color: var(--background-white);
   margin: 2px;
 }
 
@@ -110,17 +118,17 @@ body {
 }
 
 .header-curve, .light-pink-curve {
-  height: 29px;
+  height: 30px;
   width: 100%;
   background-color: var(--container-purple);
-  border-radius: 0 0 140% 140%;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 150% 150%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cell-phone-img {
   position: absolute;
   left: 371px;
-  top: 476px;
+  top: 480px;
   width: 100%;
   max-width: 715px;
   height: 427.5px;
@@ -139,13 +147,13 @@ body {
 
 .small-spiral {
   position: absolute;
-  left: 87.08em;
-  top: 12.40em;
+  left: 77.49em;
+  top: 12.20em;
 }
 
 main {
   background-color: #FCF8FF;
-  height: 720.73px;
+  height: 750.73px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -155,6 +163,7 @@ main {
 }
 
 #container-services {
+  padding-top: 90px;
   text-align: center;
   display: flex;
   gap: 0 1.62em;
@@ -172,11 +181,16 @@ main {
   width: 56px;
   height: 56px;
   border: 1px solid #584D62;
+  cursor: pointer;
   border-radius: 50%;
 }
 
 .circle a {
   text-decoration: none;
+  font-family: Fraunces, serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--container-purple);
 }
 
 .call-services {
@@ -188,7 +202,7 @@ main {
 .text-services {
   width: 100%;
   max-width: 354px;
-  padding-top: 0.7em;
+  padding-top: 0.8em;
   font-weight: 400;
   font-size: 1.12em;
   line-height: 2em;
@@ -200,11 +214,12 @@ main {
 }
 
 
-#invitation-to-test {
+#invitation-content {
+  margin: 110px auto;
   width: 100%;
   max-width: 1112px;
   max-height: 647.74px;
-  display: flex;
+  position: relative;
 }
 
 .img-founder {
@@ -215,10 +230,20 @@ main {
 
 .img-founder img {
   width: 100%;
+  width: 450.29px;
+  height: 453px;
+}
+
+.content-position {
+  position: absolute;
+  left: 363px;
+  top: 150px;
+  z-index: 2;
 }
 
 .invitation {
-  color: var(--background-page);
+  padding: 30px 64px;
+  color: var(--background-white);
   background-color: var(--container-purple);
   width: 100%;
   max-width: 730px;
@@ -228,6 +253,47 @@ main {
   justify-content: center;
 }
 
+.invitation h2 {
+  font-family: Fraunces, serif;
+  font-weight: 600;
+  font-size: 56px;
+  margin: 0.5em 0;
+}
+
+.invitation p {
+  width: 602px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 400px;
+}
+
 .access-test {
   width: 190px;
+  margin: 2em 0;
+  font-weight: 700;
+  border: none;
+}
+
+.spiral-invitation-content {
+  position: absolute;
+  left: 432px;
+  top: 260px;
+}
+
+footer {
+  margin-top: 180px;
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+}
+
+.social-media {
+  width: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-media a svg:hover path {
+  fill: var(--container-purple);
 }
