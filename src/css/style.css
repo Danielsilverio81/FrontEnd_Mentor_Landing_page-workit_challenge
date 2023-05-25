@@ -230,7 +230,7 @@ main {
 
 .img-founder img {
   width: 100%;
-  width: 450.29px;
+  max-width: 450.29px;
   height: 453px;
 }
 
@@ -296,4 +296,75 @@ footer {
 }
 .social-media a svg:hover path {
   fill: var(--container-purple);
+}
+
+@media (max-width: 425px) {
+  #container-purple {
+    height: 481px;
+  }
+  #header-top {margin-bottom: 3.5em;}
+  .header-curve {box-shadow: none;}
+  #spiral-images {display: none;}
+  #initial-logo {
+    margin: 2em 1em;
+    width: 95.76px;
+    height: 24.61px;
+  }
+  .access {
+    margin: 2em 1em 0 0;
+    font-size: 1em;
+  }
+  .call-for-page h1 {
+    font-size: 3.12em; 
+    line-height: 57px;
+  }
+  .click-to-learn { margin-top: 2.5em;}
+  .cell-phone-img {
+    max-width: 320px;
+    height: 184px;
+    left: 46px;
+    top: 425px;
+  }
+  main {height: 1050.71px;}
+  #container-services {flex-direction: column;}
+  .button-services {margin: 40px 16px;}
+  .circle {margin: 23px auto;}
+  .call-services {font-size: 1.7em;}
+  .text-services {font-size: 1em;}
+  #invitation-content {
+    height: 603px
+  }
+  .content-position {
+    width: 343px;
+    top: 230px;
+    left: 43px;
+  }
+  .img-founder {
+    margin: 0 auto;
+    width: 290px;
+    height: 290px;
+  }
+  .img-founder img {height: 281px;}
+  .invitation {
+    text-align: center;
+    padding: 0 31px;
+    height: 375px;
+  }
+  .invitation h2 {
+    font-size: 1.8em;
+    margin: 0;
+  }
+  .invitation p {
+    padding-top: 16px;
+    font-size: 1em;
+    width: 281px;
+  }
+  .spiral-invitation-content {display: none;}
+  .access-test {
+    margin: 20px auto;
+    height: 50px;
+  }
+  footer {
+    margin: 74px auto;
+  }
 }
