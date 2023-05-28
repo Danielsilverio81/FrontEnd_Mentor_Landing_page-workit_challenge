@@ -89,9 +89,10 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 0.32em;
+  margin-top: 1.1em;
+  padding: 0.31em;
   max-width: 635px;
-  max-height: 268px;
+  max-height: 278px;
 }
 
 .call-for-page h1 {
@@ -129,7 +130,7 @@ body {
 .cell-phone-img {
   position: absolute;
   left: 23.18em;
-  top: 31.2em;
+  top: 31.5em;
   width: 100%;
   max-width: 715px;
   height: 427.5px;
@@ -165,14 +166,14 @@ main {
 }
 
 #container-services {
-  padding-top: 5.72em;
+  padding-top: 5.93em;
   text-align: center;
   display: flex;
   gap: 0 1.62em;
   justify-content: center;
   width: 100%;
   max-width: 1114px;
-  max-height: 408px;
+  max-height: 500px;
 }
 
 .circle {
@@ -204,7 +205,7 @@ main {
 .text-services {
   width: 100%;
   max-width: 354px;
-  padding-top: 0.8em;
+  padding-top: 0.9em;
   font-weight: 400;
   font-size: 1.12em;
   line-height: 2em;
