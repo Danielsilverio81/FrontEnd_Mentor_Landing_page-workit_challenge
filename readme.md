@@ -8,6 +8,8 @@ ____
 I had a little delay trying to outline the detail of the page using svg , but in the end because I'm not used to creating svg I chose to create a div where in the css I outline the bottom of the container, but I intend to refactor and use svg further ahead, but anyway I think it was a good way to solve the problem at this point
 ...
 
+![alt](src/assets/images/frontEnd-Mentor%20challenge.gif)
+
 TECHNOLOGIES
 
 * HTML
