@@ -1,9 +1,9 @@
-@media (min-width:1073px) and (max-width: 1115px) {
+@media (min-width:1077px) and (max-width: 1115px) {
   .cell-phone-img {left: 15.1em;}
   .small-spiral {left: 58em;}
 }
 
-@media (min-width: 768px) and (max-width:1076px) {
+@media (min-width: 767px) and (max-width:1076px) {
   body {font-size: 1em;}
   main {height: 720.73px;}
   #header-top {padding: 37px 39px; max-width: 689px; height: auto; margin: 0 auto;}
