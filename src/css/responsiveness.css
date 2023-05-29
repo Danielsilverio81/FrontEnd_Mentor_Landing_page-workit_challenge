@@ -37,7 +37,7 @@
   .access {margin: 2em 1em 0 0; font-size: 1em;}
   .call-for-page h1 {font-size: 3.12em; line-height: 57px;}
   .click-to-learn { margin-top: 2.5em;}
-  .cell-phone-img {max-width: 320px; height: 184px; left: 2.87em; top: 26.56em;}
+  .cell-phone-img {max-width: 320px; height: 184px; left: 2.87em; top: 28.56em;}
   main {height: 1050.71px;}
   #container-services {flex-direction: column;}
   .button-services {margin: 2.5em 1em;}
@@ -45,7 +45,7 @@
   .call-services {font-size: 1.7em;}
   .text-services {font-size: 1em;}
   #invitation-content {height: 603px}
-  .content-position {width: 343px; top: 14.37em; left: 2.68em;}
+  .content-position {width: 343px; top: 14.37em; left: 1.58em;}
   .img-founder {margin: 0 auto; width: 290px; height: 290px;}
   .img-founder img {height: 281px;}
   .invitation {text-align: center; padding: 0 1.93em; height: 375px;}
@@ -56,9 +56,9 @@
   footer {margin: 4.62em auto;}
 }
 
-@media (max-width:386px) {
+@media (max-width:385px) {
   body {font-size: 0.83em;}
-  .cell-phone-img {max-width: 220px; height: 144px;}
-  .content-position {width: 293px; left: 0.81em;}
+  .cell-phone-img {max-width: 220px; height: 144px; left: 4.98em; top: 31em;}
+  .content-position {width: 293px; left: 1.8em; top: 17em;}
   .invitation p {font-size: 0.8em; width: 181px;}
 }
