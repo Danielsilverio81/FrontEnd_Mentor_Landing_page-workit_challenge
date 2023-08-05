@@ -301,3 +301,36 @@ footer {
   fill: var(--container-purple);
 }
 
+
+[data-move] {
+  opacity: 0;
+  transition: .6s;
+  animation-duration: 1s;
+}
+
+[data-move="left"] {
+  transform: translate3d(-60px, 0 , 0);
+}
+
+[data-move="right"] {
+  transform: translate3d(60px, 0 , 0);
+}
+
+[data-move].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+[data-move="scale"].animate {
+  animation: toGrow 1.1s linear 1;
+}
+
+
+@keyframes toGrow {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

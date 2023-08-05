@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Come check! Data tailored to your needs.">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/responsiveness.css">
   
@@ -14,7 +14,7 @@
   <header id="container-purple">
     <section id="header-top">
       <div class="logo-light-image">
-        <img id="initial-logo" src="src/assets/images/logo-light.svg" 
+        <img id="initial-logo" src="src/assets/images/logo-light.webp" 
         alt="white website logo over art, like a purple container">
       </div>
       <div class="access">
@@ -27,7 +27,7 @@
         alt="large image of a spring at the top and left corner of the page">
       </figure>
       <figure>
-        <img class="small-spiral" src="src/assets/images/bg-pattern-2.svg" 
+        <img class="small-spiral" src="src/assets/images/bg-pattern-2.svg"
         alt="small image of a spring in the corner of the page">
       </figure>
     </section>
@@ -41,7 +41,7 @@
 <div class="header-curve"></div>
 
     <figure>
-      <img class="cell-phone-img" src="src/assets/images/image-hero.webp" alt="Cell Phone Image">
+      <img class="cell-phone-img" src="src/assets/images/image-hero.webp" loading="lazy" alt="Cell Phone Image">
     </figure>
 
   <main>
@@ -50,7 +50,7 @@
             <div class="circle"><a href="#" aria-label="button to access what is described below">1</a></div>
             <div class="info-services">
               <h2 class="call-services">Actionable insights</h2>
-              <p class="text-services">Optimize your products, improve customer satisfaction and stay ahead of the competition
+              <p class="text-services"data-move="left">Optimize your products, improve customer satisfaction and stay ahead of the competition
                 with our product data analytics.</p>
             </div>
           </div>
@@ -66,7 +66,7 @@
             <div class="circle"><a href="#" aria-label="button to access what is described below">3</a></div>
             <div class="info-services">
               <h2 class="call-services">Always affordable</h2>
-              <p class="text-services"> Always affordable pricing that scales with your business. Get top-quality product data
+              <p class="text-services" data-move="right"> Always affordable pricing that scales with your business. Get top-quality product data
                 analytics services without hidden costs or unexpected fees.</p>
             </div>
           </div>
@@ -76,10 +76,10 @@
     </section>
     <section id="invitation-content">
       <div class="img-founder">
-        <img src="src/assets/images/image-founder.webp" alt="Image founder of the company">
+        <img src="src/assets/images/image-founder.webp" loading="lazy" alt="Image founder of the company">
       </div>
       <div class="content-position">
-        <div class="invitation">
+        <div class="invitation" data-move="scale">
           <article>
             <h2>Be the first to test</h2>
             <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a
@@ -97,7 +97,7 @@
   <footer>
     <div class="logo-dark">
       <a href="#container-purple" aria-label="return to top">
-        <img src="src/assets/images/logo-dark.svg" alt="dak logo page, click to return to top of page"></a>
+        <img src="src/assets/images/logo-dark.webp" alt="dak logo page, click to return to top of page"></a>
     </div>
     <div class="social-media">
       <a href="#" aria-label="social media Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#584D72" d="M18.896 
@@ -119,5 +119,6 @@
           3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"/></svg></a>
     </div>
   </footer>
+  <script src="src/js/index.js"></script>
 </body>
 </html>
